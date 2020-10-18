@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"No. of element in array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter Elements: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int start,end;
+    cout<<"Enter the starting index: ";
+    cin>>start;
+    cout<<"Enter the End index: ";
+    cin>>end;
+    while(start<end)
+    {
+        int tmp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=tmp;
+        start++;
+        end--;
+    }
+    cout<<"Your reversed array\n";
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
