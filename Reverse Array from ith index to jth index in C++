@@ -31,3 +31,13 @@ int main()
     }
     return 0;
 }
+
+
+OUTPUT:
+
+No. of element in array: 4                                                                                         
+Enter Elements: 5 4 234 47834                                                                                      
+Enter the starting index: 0                                                                                        
+Enter the End index: 2                                                                                             
+Your reversed array                                                                                                
+234 4 5 47834
